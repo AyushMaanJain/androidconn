@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.RealoneKart.AppBarOverlay">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/app_head1"
+                android:visibility="invisible"
+                >
+                <ImageButton
+                    android:id="@+id/head_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_back"
+                    android:background="@color/white"
+                    android:layout_margin="15dp"
+                    android:layout_alignParentStart="true"
+                    />
+                <EditText
+                    android:id="@+id/search_p"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:imeOptions="actionDone"
+                    android:hint="Search"
+                    android:background="@drawable/card_bg"
+                    android:padding="8.5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#555"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="10dp"
+                    />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/side_nav_bar"
+                android:id="@+id/app_head"
+                android:visibility="visible"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/logo"
+                    android:src="@drawable/realonkart_logo"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    />
+                <ImageButton
+                    android:id="@+id/drawer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_drawer_menu"
+                    android:background="@color/white"
+                    android:layout_margin="15dp"
+                    android:layout_alignParentStart="true"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="10dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/searcher"
+                        android:clickable="true"
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_search"
+                        />
+                    <ImageView
+                        android:id="@+id/account"
+                        android:clickable="true"
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_account_box"
+                        />
+                    <ImageView
+                        android:id="@+id/cart"
+                        android:clickable="true"
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_cart"
+                        />
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </FrameLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <GridLayout
+        android:id="@+id/grid_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        >
+    </GridLayout>
+</androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+
+            android:id="@+id/apple"
+            android:title="Apple" />
+        <item
+            android:id="@+id/samsung"
+            android:title="Samsung" />
+        <item
+            android:id="@+id/vivo"
+            android:title="Vivo" />
+        <item
+            android:id="@+id/oppo"
+            android:title="Oppo" />
+
+        <item
+            android:id="@+id/redmi"
+            android:title="RedMi" />
+        <item android:id="@+id/cases"
+            android:title="Cases"
+            />
+        <item android:id="@+id/about"
+            android:title="About us"
+            />
+
+    </group>
+</menu>
